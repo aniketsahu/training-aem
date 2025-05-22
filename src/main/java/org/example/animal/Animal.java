@@ -7,5 +7,14 @@ package org.example.animal;
 
     public void sound(){
         System.out.println("My sound is " + sounds);
+        Dog dog = new Dog();
+        dog.test();
     }
+    static class Dog{
+        public String dogName = "Grover";
+        public void test(){
+
+        }
+     }
+
 }
