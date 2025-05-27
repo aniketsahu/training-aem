@@ -13,8 +13,9 @@ package org.example.animal;
     static class Dog{
         public String dogName = "Grover";
         public void test(){
-
+                System.out.println("This is a test");
+            }
         }
      }
 
-}
+
