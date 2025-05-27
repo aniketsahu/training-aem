@@ -5,6 +5,8 @@ package org.example.animal;
     protected String name;
     protected String sounds = "meow";
 
+    public String testing;
+
     public void sound(){
         System.out.println("My sound is " + sounds);
         Dog dog = new Dog();
