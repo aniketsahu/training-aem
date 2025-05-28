@@ -5,6 +5,8 @@ public class Car implements Transport, Vehicle {
     String name;
     int cc;
     final int totalMarks = 500;
+    private int currentSpeed;
+
     public Car(String color, String name, int cc){
         this.cc = cc;
         this.color = color;
@@ -21,6 +23,16 @@ public class Car implements Transport, Vehicle {
         currentSpeed -= decreaseSpeedBy;
         if (currentSpeed < 0) currentSpeed = 0;
         System.out.println(name + " speed decreased by " + decreaseSpeedBy + " km/h. Current speed: " + currentSpeed + " km/h");
+    }
+
+    @Override
+    public void blowHorn() {
+
+    }
+
+    @Override
+    public void applyBreak() {
+
     }
 }
 
