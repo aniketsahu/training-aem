@@ -1,6 +1,6 @@
 package org.example.vehicle;
 
-public class Car {
+public class Car implements Transport,Vehicle {
     String color;
     String name;
     int cc;
@@ -9,5 +9,15 @@ public class Car {
         this.cc = cc;
         this.color = color;
         this.name = name;
+    }
+
+    @Override
+    public void blowHorn() {
+
+    }
+
+    @Override
+    public void applyBreak() {
+
     }
 }

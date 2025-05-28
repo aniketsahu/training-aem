@@ -9,10 +9,11 @@ public class Cat implements AnimalInterface {
     }
     @Override
     public void sound() {
-
+        System.out.println("This is the implementation class of the interface");
     }
 
     public static void main(String[] args) {
         Cat cat = new Cat();
+        cat.sound();
     }
 }
