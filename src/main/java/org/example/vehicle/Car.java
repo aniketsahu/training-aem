@@ -11,7 +11,9 @@ public class Car implements Transport, Vehicle {
         this.cc = cc;
         this.color = color;
         this.name = name;
-    }
+
+        int maxSpeed = 180;
+
     // Method to increase speed
     public void speedUp(int increaseSpeedBy) {
         currentSpeed += increaseSpeedBy;
@@ -24,19 +26,30 @@ public class Car implements Transport, Vehicle {
         if (currentSpeed < 0) currentSpeed = 0;
         System.out.println(name + " speed decreased by " + decreaseSpeedBy + " km/h. Current speed: " + currentSpeed + " km/h");
     }
+@Override public void changeGear() {
 
+}
     @Override
     public void blowHorn() {
 
     }
+    @Override public void start() {
+        System.out.println("Car started.");
+    }
 
     @Override
     public void applyBreak() {
-
+        System.out.println("Car brake applied.");
+    }
+    @Override public void stop() {
+        System.out.println("Car stopped.");
+    }
+    @Override
+    public void playMusic(){
+        System.out.println("Car is playing music.");
     }
 }
-
-class CarTest {
+ class CarTest {
     public static void main(String[] args) {
         Car car = new Car("Red", "Honda Civic", 1800);
 
