@@ -49,26 +49,12 @@ public class Main {
 
     public static void main(String[] args) {
 DayOfWeek today = DayOfWeek.TUESDAY;
-        public static void main(String[] args) {
-            DayOfWeek today = DayOfWeek.TUESDAY;
 
-            if (today == DayOfWeek.TUESDAY || (today == DayOfWeek.THURSDAY) || (today == DayOfWeek.FRIDAY)) {
-                System.out.println("Work day");
-    else {
-                    System.out.println("Weekend");
-                }
-            }
-/*if (today == DayOfWeek.WEDNESDAY || (today == DayOfWeek.THURSDAY) || (today == DayOfWeek.FRIDAY)) {
-    System.out.println("Work day");
-    else {
-        System.out.println("Weekend");
-    }*/
-}
         A a1 = new A();
 
         A.B b1 = a1.new B();
 
-        Lion lion = new Lion();
+        Lion lion = new Lion("Lion Grover");
         lion.sound();
         lion.updateSound();
         lion.sound();
