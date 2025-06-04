@@ -1,10 +1,12 @@
 package org.example.shape;
 
 public class Circle extends Shape{
+    int radius;
 
     @Override
-    public int calculateArea() {
+    public double calculateArea() {
         //calculate area of circle
-        return 0;
+        area = 2 * 3.16 * radius;
+        return area;
     }
 }

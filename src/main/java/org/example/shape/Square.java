@@ -1,9 +1,11 @@
 package org.example.shape;
 
-public class Triangle extends Shape{
+public class Square extends Shape{
+    int side;
     @Override
-    public int calculateArea() {
+    public double calculateArea() {
         //calculate area of tringle
+
         return 0;
     }
 }
