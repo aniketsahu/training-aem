@@ -72,12 +72,14 @@ public class DemoCollection {
 
         //Demo for Map
         Map studentCityMap = new HashMap();
+
         studentCityMap.put("Malia","California");
         studentCityMap.put("T","USA");
         studentCityMap.put("Sage","Gorgia");
         studentCityMap.put("Erroll","SA");
-
         studentCityMap.put(5,"sds");
+
+
 
 
 
